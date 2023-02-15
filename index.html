@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"> 
+      <header class="lg:bg-center bg-right bg-cover bg-no-repeat bg-slate-700" style="background-image: url('img/header__bg.png');">
+        <div class="container mx-auto pb-36">
+          <div class="max-w-7xl mx-auto flex justify-between text-white items-center flex-wrap p-5">
+            <a class="mr-5 font-medium text-xl" href="#">Сладкий сундук</a>
+            <div class="flex justify-between flex-wrap">
+              <a class="sm:mr-5 flex self-center w-40 my-5 hover:underline" href="#">
+                <img class="flex self-start" src="img/header__ico.svg" alt="">
+                <p class="ml-2.5 font-normal text-xs ">г. Санкт Петербург, ул. Куйбышева 31</p>
+              </a>
+              <div class="self-center">
+                <a class="flex hover:underline" href="#">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                  <p class="font-bold text-xl ml-2.5">8 (812) 844-95-49</p>
+                </a>
+                <p class="font-normal text-xs ml-6">Ежедневно с 9:00 до 20:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-7xl mx-auto py-24 px-5">
+            <div class="w-32 bg-slate-100 rounded-md text-center py-2 uppercase font-medium text-xs text-slate-700">вкуснейшие</div>
+            <h1 class="sm:text-5xl sm:leading-tight lg:w-1/2 text-2xl leading-8 font-bold	text-white my-12">Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</h1>
+            <p class="sm:text-2xl lg:w-2/5 font-normal text-white">Приготовим за 3 часа в день заказа. 
+              Доставка на авто в холодильнике.</p>
+            <div class="flex mt-12 items-center">
+              <div class="sm:w-72 sm:py-10 w-44 py-5 bg-yellow-400 text-lg	font-medium	rounded-lg text-slate-700 text-center cursor-pointer hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">
+                <a htef="#">Перейти в каталог</a>
+              </div>
+              <p class="sm:w-52 sm:px-12 px-6 leading-6 text-white  text-sm font-normal">9 различных видов на выбор</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="bg-white">
+        <div class="container mx-auto pt-20">
+          <span class="sm:text-5xl block text-center mx-auto px-5 text-4xl font-medium mb-16">Для любых событий и дорогих вам людей</span>
+          <div class="flex-wrap px-5 flex mx-auto max-w-7xl justify-center">
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-1.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Кремовый замок</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Нежный крем любого цвета на выбор, вафельная основа</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40  hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-2.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Малиновый рай</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Воздушный крем, темная основа и ягода малины</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-3.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Фейерверк</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Разноцветные крем, с бисквитной основой</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-1.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Кремовый замок</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Нежный крем любого цвета на выбор, вафельная основа</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-2.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Малиновый рай</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Воздушный крем, темная основа и ягода малины</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-3.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Фейерверк</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Разноцветные крем, с бисквитной основой</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-1.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Кремовый замок</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Нежный крем любого цвета на выбор, вафельная основа</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-2.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Малиновый рай</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Воздушный крем, темная основа и ягода малины</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+            <div class="w-96 sm:m-3 hover:shadow-md">
+              <a href="#">
+                <img class="w-full" src="img/catalogue__img-3.jpg" alt="">
+              </a>
+              <div class="rounded-b-lg border border-slate-100 p-12">
+                <a href="#">
+                  <h2 class="text-2xl	font-bold	text-slate-700">Фейерверк</h2>
+                </a>
+                <p class="text-base	text-slate-700 font-normal my-5">Разноцветные крем, с бисквитной основой</p>
+                <p class="text-2xl font-medium	text-slate-800 mb-5">150 ₽/шт.</p>
+                <button class="orderButton bg-yellow-400	text-lg	font-medium	rounded-lg py-4 text-slate-700 w-40 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-center bg-cover bg-no-repeat bg-slate-700" style="background-image: url('img/scetch__bg.JPG');">
+        <div class="container mx-auto py-10 md:py-32">
+          <div class="max-w-7xl mx-auto py-24 flex justify-end">
+            <div class="md:max-w-xl px-5">
+              <div class="w-56 bg-slate-100 rounded-md text-center py-2 uppercase font-medium text-xs text-slate-700">Не нашли то что нужно?</div>
+              <h1 class="sm:text-5xl sm:leading-tight text-2xl leading-8 font-medium	text-white my-12 bg-opacity-10 bg-black rounded-b-lg">Приготовим заказ любой сложности по фото или эскизу</h1>
+              <p class="sm:text-xl font-normal text-white bg-opacity-10 bg-black rounded-b-lg">Загрузите фотографию или эскиз капкейков и мы рассчитаем стоимость за 30 минут</p>
+              <button class="w-60 py-8 mt-12 bg-yellow-400 text-lg	font-medium	rounded-lg text-slate-700 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Загрузить фотографию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="container mx-auto py-20">
+          <div class="xl:justify-between xl:flex-row max-w-7xl mx-auto py-10 px-5 flex flex-col-reverse items-center">
+            <div class="md:max-w-xl xl:mt-0 mt-20 px-5">
+              <div class="w-56 bg-slate-100 rounded-md text-center py-2 uppercase font-medium text-xs text-slate-700">Кто будет готовить?</div>
+              <h1 class="sm:text-5xl sm:leading-tight text-2xl leading-8 font-medium	text-slate-700 my-12">Лично приготовлю и всё красиво упакую для вашего события</h1>
+              <ul class="sm:text-lg font-normal text-slate-700 mb-12">
+                <li class="list-inside list-disc">Проконсультирую по выбору капкейкови придумаю нестандартную идею</li>
+                <li class="list-inside my-5 list-disc">Приготовлю капкейки для вашего события, которые обязательно всем понравятся </li>
+                <li class="list-inside list-disc col">Аккуратно и красиво всё упакую, если вы хотите сделать приятный подарок</li>
+              </ul>
+              <div class="sm:py-8 w-56 py-6 bg-yellow-400 text-lg font-medium	rounded-lg text-slate-700 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300 text-center">
+                <a href="#">Задать вопрос Юлии</a>
+              </div>
+            </div>
+            <div class="max-w-xl px-5">
+              <img src="img/confectioner.JPG">
+              <div class="md:absolute md:-mt-60 md:-ml-20 flex flex-col content-center w-60 -mt-14">
+                <p class="bg-slate-700 w-60 text-center text-white py-2 font-medium text-2xl">Юлия Кондратьева</p>
+                <p class="bg-slate-100 w-44 text-center self-center py-2 font-normal text-lg uppercase">ваш кондитер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-center bg-cover bg-no-repeat bg-slate-700" style="background-image: url('img/reviews__bg.png');">
+        <div class="md:py-48 container mx-auto py-10">
+          <div class="max-w-7xl mx-auto px-5">
+            <h2 class="sm:text-5xl text-4xl font-medium text-white text-center mb-20 mt-5">Почитайте отзывы довольных клиентов</h2>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="md:p-20 xl:flex-row flex bg-white p-10 flex-col-reverse justify-center">
+                    <div class="xl:w-1/2 xl:pl-24 mt-10">
+                      <div class="mb-5">
+                        <img src="img/reviews__item.svg" alt="">
+                      </div>
+                      <h3 class="font-medium text-3xl leading-10">«Результат дико порадовал, друзья были в восторге»</h3>
+                      <p class="text-sm font-normal my-5 leading-6">«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!)</p>
+                      <a class="text-cyan-500 hover:underline hover:decoration-dashed underline-offset-8" href="#">
+                        Читать отзыв полностью
+                      </a>
+                    </div>
+                    <div class="xl:w-1/2">
+                      <div class="flex justify-center mb-5" class="div">
+                        <img class="w-96" src="img/reviews__img.JPG" alt="">
+                      </div>
+                      <h3 class="text-slate-700 text-xl font-medium text-center my-1.5">Ирина Ларионова</h3>
+                      <p class="text-gray-400 text-base font-normal text-center">Санкт-Петербург</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="md:p-20 xl:flex-row flex bg-white p-10 flex-col-reverse justify-center">
+                    <div class="xl:w-1/2 xl:pl-24 mt-10">
+                      <div class="mb-5">
+                        <img src="img/reviews__item.svg" alt="">
+                      </div>
+                      <h3 class="font-medium text-3xl leading-10">«Результат дико порадовал, друзья были в восторге»</h3>
+                      <p class="text-sm font-normal my-5 leading-6">«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!)</p>
+                      <a class="text-cyan-500 hover:underline hover:decoration-dashed underline-offset-8" href="#">
+                        Читать отзыв полностью
+                      </a>
+                    </div>
+                    <div class="xl:w-1/2">
+                      <div class="flex justify-center mb-5" class="div">
+                        <img class="w-96" src="img/reviews__img.JPG" alt="">
+                      </div>
+                      <h3 class="text-slate-700 text-xl font-medium text-center my-1.5">Ирина Ларионова</h3>
+                      <p class="text-gray-400 text-base font-normal text-center">Санкт-Петербург</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="md:p-20 xl:flex-row flex bg-white p-10 flex-col-reverse justify-center">
+                    <div class="xl:w-1/2 xl:pl-24 mt-10">
+                      <div class="mb-5">
+                        <img src="img/reviews__item.svg" alt="">
+                      </div>
+                      <h3 class="font-medium text-3xl leading-10">«Результат дико порадовал, друзья были в восторге»</h3>
+                      <p class="text-sm font-normal my-5 leading-6">«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!)</p>
+                      <a class="text-cyan-500 hover:underline hover:decoration-dashed underline-offset-8" href="#">
+                        Читать отзыв полностью
+                      </a>
+                    </div>
+                    <div class="xl:w-1/2">
+                      <div class="flex justify-center mb-5" class="div">
+                        <img class="w-96" src="img/reviews__img.JPG" alt="">
+                      </div>
+                      <h3 class="text-slate-700 text-xl font-medium text-center my-1.5">Ирина Ларионова</h3>
+                      <p class="text-gray-400 text-base font-normal text-center">Санкт-Петербург</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-center mt-16 space-x-4 mb-5">
+                <button class="button-prev rounded-full bg-yellow-400 w-16 h-16 flex justify-center items-center hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">
+                  <img src="img/reviews__button.svg" alt="">
+                </button>
+                <button class="button-next rounded-full bg-yellow-400 w-16 h-16 flex justify-center items-center rotate-180 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">
+                  <img src="img/reviews__button.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="container mx-auto py-32 max-w-full">
+          <div class="px-5 mx-auto text-center">
+            <h2 class="sm:text-5xl text-4xl font-medium mb-5 text-slate-700">Сделали более 3.000 заказов за 2 года</h2>
+            <p class="text-2xl text-slate-700 font-normal mb-20">Посмотрите фото реальных заказов из нашего instagram</p>
+            <div class="flex-wrap flex mx-auto justify-center">
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-1.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-2.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                  <img src="img/gallery__img-3.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-1.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-2.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-3.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-1.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-2.png" alt="">
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 w-auto p-2 flex justify-center hover:shadow-md">
+                <img src="img/gallery__img-3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="wrap-center-middle bg-center bg-cover bg-no-repeat bg-slate-700 -mb-12" style="background-image: url('img/footer__bg.png');">
+        <div class="md:pt-28 md:pb-20 container mx-auto py-10">
+          <div class="max-w-7xl mx-auto px-5">
+            <div class="md:p-20 bg-white p-10 text-center mt-40">
+              <h2 class="text-4xl font-bold text-slate-700">Чтобы сделать заказ, укажите ваш телефон</h2>
+              <p class="text-xl font-normal text-slate-700 tracking-wide mt-5 mb-10">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</p>
+              <form>
+                <div class="lg:flex-row lg:space-x-3 lg:space-y-0 flex flex-col items-center justify-center space-y-3 mb-5">
+                  <div class="relative">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-5 pointer-events-none">
+                      <img src="img/footer__number.svg" alt="">
+                    </div>
+                    <input id="order-form-phone-number" required type="tel" class="sm:w-80 block pl-14 w-64 rounded-lg text-slate-700 font-normal text-sm bg-slate-200 py-6" placeholder="Номер телефона">
+                  </div>
+                  <button data-modal="#modal" type="button" class="btn js-modal sm:w-80 w-64 py-5 bg-yellow-400 text-lg font-medium	rounded-lg text-slate-700 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Сделать заказ</button>
+                </div>
+                <div class="text-xs text-normal text-slate-500 flex items-center justify-center">
+                  <input id="remember" type="checkbox" value="" class="mr-2 w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required checked>
+                  <label for="remember">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</label>
+                </div>
+              </form>
+            </div>
+            <nav class="mt-20 text-gray-500 text-normal text-xs">
+              <ul class="flex flex-wrap items-center justify-center mb-5">
+                <li>
+                  <a href="#" class="mr-4 hover:underline">Согласие на обработку данных</a>
+                </li>
+                <li>
+                  <a href="#" class="mr-4 hover:underline">Служба поддержки</a>
+                </li>
+                <li>
+                  <a href="#" class="mr-4 hover:underline">Политика конфиденциальности</a>
+                </li>
+              </ul>
+              <span class="block text-center">© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</span>
+            </nav>
+          </div>
+        </div>
+      </footer>
+
+      <div id="modal" class="modal-window">
+        <div class="modal-window__block">
+          <div id="close" class="relative rounded-lg px-5 py-2 w-full">
+            <div class="flex justify-end">
+              <button type="button" class="modal-close text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close modal</span>
+              </button> 
+            </div>
+            <div class="my-5 p-6 text-center text-slate-700">
+              <p class="font-bold mb-2 text-xl">Форма успешно отправлена!</p>
+              <p class="font-normal text-lg">Ваша заявка приянта.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-window__backdrop hidden" id="modal-backdrop"></div>
+    </div>
+
+  
+    <script type="module" src="scripts/main.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
