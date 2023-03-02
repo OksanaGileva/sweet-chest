@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <title>Vite App</title>
+    <title>sweet-chest</title>
   </head>
   <body>
     <div id="app"> 
@@ -346,12 +346,12 @@
                     <div class="flex absolute inset-y-0 left-0 items-center pl-5 pointer-events-none">
                       <img src="img/footer__number.svg" alt="">
                     </div>
-                    <input id="order-form-phone-number" required type="tel" class="sm:w-80 block pl-14 w-64 rounded-lg text-slate-700 font-normal text-sm bg-slate-200 py-6" placeholder="Номер телефона">
+                    <input id="order-form-phone-number" type="tel" class="sm:w-80 block pl-14 w-64 rounded-lg text-slate-700 font-normal text-sm bg-slate-200 py-6" placeholder="8 (904) 223-45-67" pattern="[8]-[0-9]-[0-9]-[0-9]" required>
                   </div>
                   <button data-modal="#modal" type="button" class="btn js-modal sm:w-80 w-64 py-5 bg-yellow-400 text-lg font-medium	rounded-lg text-slate-700 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900 transition ease-in-out delay-150 duration-300">Сделать заказ</button>
                 </div>
                 <div class="text-xs text-normal text-slate-500 flex items-center justify-center">
-                  <input id="remember" type="checkbox" value="" class="mr-2 w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required checked>
+                  <input id="remember" type="checkbox" value="" required checked class="mr-2 w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800">
                   <label for="remember">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</label>
                 </div>
               </form>
